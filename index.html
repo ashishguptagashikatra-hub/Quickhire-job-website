@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickHire - Job Opportunities</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header">
+    <div class="logo">QuickHire</div>
+
+    <nav class="nav" id="nav">
+      <a href="#jobs">Jobs</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#apply">Apply</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Get a Job Easily 🚀</h1>
+      <p>
+        We provide verified job opportunities for students, part-timers, and full-timers.
+        <b>No 18+ required.</b> Apply in 2 minutes and start earning quickly.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#apply" class="btn primary">Apply Now</a>
+        <a href="#jobs" class="btn secondary">View Jobs</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="card">
+        <h3>💼 1000+ Openings</h3>
+        <p>Part-time | Full-time | Work from home</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jobs Section -->
+  <section class="section" id="jobs">
+    <h2>Available Jobs</h2>
+    <p class="subtitle">Choose the best opportunity for you.</p>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Data Entry</h3>
+        <p class="price">₹8k - ₹15k</p>
+        <ul>
+          <li>✔ Work from Home</li>
+          <li>✔ Flexible Timing</li>
+          <li>✔ No Experience Needed</li>
+        </ul>
+        <a href="#apply" class="btn primary">Apply</a>
+      </div>
+
+      <div class="price-card highlight">
+        <h3>Customer Support</h3>
+        <p class="price">₹12k - ₹20k</p>
+        <ul>
+          <li>✔ Remote / Office</li>
+          <li>✔ Weekly Payment</li>
+          <li>✔ Training Provided</li>
+        </ul>
+        <a href="#apply" class="btn primary">Apply</a>
+      </div>
+
+      <div class="price-card">
+        <h3>Delivery Partner</h3>
+        <p class="price">₹15k - ₹30k</p>
+        <ul>
+          <li>✔ Incentives Available</li>
+          <li>✔ Quick Joining</li>
+          <li>✔ Local Area Jobs</li>
+        </ul>
+        <a href="#apply" class="btn primary">Apply</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section dark" id="benefits">
+    <h2>Why Choose QuickHire?</h2>
+    <p class="subtitle">We help you get hired faster.</p>
+
+    <div class="features-grid">
+      <div class="feature">
+        <h3>⚡ Fast Hiring</h3>
+        <p>Get selected within 24-48 hours.</p>
+      </div>
+
+      <div class="feature">
+        <h3>📱 Easy Application</h3>
+        <p>Apply in 2 minutes with basic details.</p>
+      </div>
+
+      <div class="feature">
+        <h3>💰 Weekly Payments</h3>
+        <p>Many jobs offer weekly payment options.</p>
+      </div>
+
+      <div class="feature">
+        <h3>🛡 Verified Jobs</h3>
+        <p>We list only genuine job openings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apply Form -->
+  <section class="section" id="apply">
+    <h2>Apply for a Job</h2>
+    <p class="subtitle">Fill your details and we will contact you.</p>
+
+    <form class="contact-form" id="jobForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="text" id="city" placeholder="City" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+
+      <select id="jobType" required>
+        <option value="">Select Job Type</option>
+        <option value="Data Entry">Data Entry</option>
+        <option value="Customer Support">Customer Support</option>
+        <option value="Delivery Partner">Delivery Partner</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <button type="submit" class="btn primary">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section class="section dark" id="contact">
+    <h2>Need Help?</h2>
+    <p class="subtitle">Contact our support team anytime.</p>
+    <p>Email: support@quickhire.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 QuickHire. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Consent Popup -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+      <h2>Data Usage Permission</h2>
+      <p>
+        By submitting this form, you agree that QuickHire can collect and use your data
+        (name, age, contact details) only for job hiring and communication purposes.
+      </p>
+
+      <div class="popup-buttons">
+        <button class="btn secondary" id="declineBtn">Decline</button>
+        <button class="btn primary" id="acceptBtn">Accept & Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
